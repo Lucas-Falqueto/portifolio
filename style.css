@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.container-nav {
+    width: 100%;
+    height: 50px;
+    background-color: #210B2C;
+}
+
+.container-nav .navBar {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.container-nav .navBar li {
+    text-decoration: none;
+    list-style: none;
+    margin: 0 5px;
+    padding: 5px;
+    /* float: left; */
+}
+
+.container-nav .navBar li a {
+    color: white;
+}
+
+.container-perfil {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container-perfil .foto {
+    height: 288px;
+    width: 288px;
+    border-radius: 144px;
+    background: url("img/KRL_1283.JPG") no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container-perfil .redes-sociais {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-top: 15px;
+
+}
+
+.container-perfil .redes-sociais li a i {
+    font-size: 25px;
+    color: black;
+}
+
+.container-perfil .btns {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.container-perfil .arrow {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: arrowAni 2s infinite ease-in;
+}
+
+.container-perfil .arrow i {
+    font-size: 30px;
+}
+
+@keyframes arrowAni {
+    0% {
+        bottom: 10px;
+    }
+
+    50% {
+        bottom: 0px;
+    }
+
+    100% {
+        bottom: 10px;
+    }
+}
+
+.container-aboutMe {
+    display: flex;
+    flex-direction: column;
+    background-color: #210B2C;
+    color: white;
+    padding: 30px;
+    height: calc(100vh + 50px);
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.about-me p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.soft-skills {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.soft-skills .skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    margin: 20px 0 50px;
+    padding: 10px;
+}
+
+.soft-skills .skills li i {
+    font-size: 50px;
+}
+
+.soft-skills .skills li i.fa-js:hover {
+    color: yellow;
+    transition: 0.3s ease-in;
+}
+
+.soft-skills .skills li i.fa-node:hover {
+    color: green;
+    transition: 0.3s ease-in;
+}
+
+.soft-skills .skills li i.fa-html5:hover {
+    color: orange;
+    transition: 0.3s ease-in;
+}
+
+.soft-skills .skills li i.fa-css3-alt:hover {
+    color: blue;
+    transition: 0.3s ease-in;
+}
+
+.soft-skills .skills li i.fa-java:hover {
+    color: red;
+    transition: 0.3s ease-in;
+}
+
+
+.btn {
+    background-color: #55286F;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #210B2C;
+    transition: 0.3s ease-out;
+}
+
+.sec-projects {
+    height: calc(100vh - 40px);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sec-projects .projects {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.sec-projects .projects .project {
+    width: 400px;
+    height: 300px;
+    background: url("img/Projetos\ em\ produção.png");
+}
+
+.sec-projects .projects .project:hover {
+    scale: 1.01;
+    transition: 0.1s ease-in;
+}
+
+footer {
+    background-color: #210B2C;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    height: 40px;
+}
