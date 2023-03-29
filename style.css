@@ -8,6 +8,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .container-nav {
     width: 100%;
     height: 50px;
@@ -215,4 +219,48 @@ footer {
     line-height: 40px;
     font-size: 12px;
     height: 40px;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+
+    .container-nav .navBar {
+        justify-content: center;
+    }
+
+
+    .container-perfil {
+        height: calc(100vh - 50px);
+    }
+
+    .about-me {
+        padding: 0 10px;
+    }
+
+    .about-me h1 {
+        font-size: 18px;
+    }
+
+    .about-me p {
+        font-size: 12px;
+    }
+
+    .soft-skills h1 {
+        font-size: 18px;
+    }
+
+    .soft-skills .skills li i {
+        font-size: 45px;
+    }
+
+    .sec-projects .projects .project {
+        width: 200px;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #projects {
+        font-size: 18px;
+    }
 }
