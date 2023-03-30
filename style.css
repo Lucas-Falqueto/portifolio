@@ -15,12 +15,11 @@
 }
 
 .container-nav .navBar {
-    height: 60px;
+    height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-size: 20px;
 }
 
 .container-nav .navBar li {
@@ -35,18 +34,17 @@
 }
 
 .container-perfil {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-    font-size: 24px;
 }
 
 .container-perfil .foto {
-    height: 388px;
-    width: 388px;
+    height: 288px;
+    width: 288px;
     border-radius: 50%;
     background: url("img/KRL_1283.JPG") no-repeat;
     background-size: cover;
@@ -111,7 +109,6 @@
     height: calc(100vh + 50px);
     align-items: center;
     justify-content: center;
-    font-size: 24px;
 }
 
 .about-me h1 {
@@ -178,7 +175,6 @@
     padding: 10px;
     margin-bottom: 15px;
     cursor: pointer;
-    font-size: 20px;
 }
 
 .btn:hover {
@@ -198,7 +194,6 @@
     flex-direction: column;
     text-align: center;
     gap: 15px;
-    font-size: 24px;
 }
 
 .sec-projects .projects .project {
@@ -223,18 +218,94 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-
-    .container-nav .navBar {
-        justify-content: center;
+    .container-nav {
+        height: 40px;
     }
 
+    .container-nav .navBar {
+        height: 40px;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .container-perfil .foto {
+        width: 270px;
+        height: 270px;
+    }
 
     .container-perfil {
-        height: calc(100vh - 60px);
+        height: calc(100vh - 40px);
+    }
+
+    .container-aboutMe {
+        padding: 0;
     }
 
     .about-me {
-        padding: 0 10px;
+        max-width: 300px;
+        padding: 0;
+        /* padding: 10px; */
+    }
+
+    .about-me h1 {
+        font-size: 18px;
+    }
+
+    .about-me p {
+        font-size: 12px;
+    }
+
+    .soft-skills h1 {
+        font-size: 18px;
+    }
+
+    .soft-skills .skills {
+        padding: 0;
+    }
+
+    .soft-skills .skills li i {
+        font-size: 25px;
+    }
+
+    .sec-projects .projects .project {
+        width: 200px;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #projects {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .container-nav {
+        height: 40px;
+    }
+
+    .container-nav .navBar {
+        height: 40px;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .container-perfil .foto {
+        width: 270px;
+        height: 270px;
+    }
+
+    .container-perfil {
+        height: calc(100vh - 40px);
+    }
+
+    .container-aboutMe {
+        padding: 0;
+    }
+
+    .about-me {
+        max-width: 300px;
+        padding: 0;
     }
 
     .about-me h1 {
